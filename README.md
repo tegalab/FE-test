@@ -64,3 +64,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Una volta scaricato il progetto sul proprio pc è necessario configurare il file .env con i dati del db
+
+DB_DATABASE=xxxxx
+
+DB_USERNAME=xxxx
+
+DB_PASSWORD=xxxx
+
+lanciare il comando php artisan migrate
+
+successivamente 
+- php artisan serve
+- npm run watch
+
