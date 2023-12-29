@@ -1,5 +1,6 @@
 <template>
     <div>
+<<<<<<< HEAD
 
         <div class="col-md-6 offset-md-3">
         <div class="card border-0">
@@ -28,6 +29,19 @@
       </div>
        
         
+=======
+        <h5 id="associating-form-text-with-form-controls">Azienda</h5>
+        <h6>{{ customer.company_name }}</h6>
+        <h5 id="associating-form-text-with-form-controls">Nome</h5>
+        <p>{{ customer.name }}</p>
+        <h5 id="associating-form-text-with-form-controls">Cognome</h5>
+        <p>{{ customer.surname }}</p>
+        <h5 id="associating-form-text-with-form-controls">Telefono</h5>
+        <p>{{ customer.telephone }}</p>
+        <h5 id="associating-form-text-with-form-controls">Email</h5>
+        <p>{{ customer.email }}</p>
+        <router-link :to="`/customers/${customer.id}/edit`" class="btn btn-primary">Edit</router-link>
+>>>>>>> 29d21da189dd38577aae98157a595daa5317fadc
     </div>
 </template>
 
