@@ -75,7 +75,10 @@ DB_PASSWORD=xxxx
 
 lanciare il comando php artisan migrate
 
-successivamente 
+successivamente
+
+- npm install
+- npm run dev
 - php artisan serve
 - npm run watch
 
