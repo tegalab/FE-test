@@ -20,8 +20,8 @@
                     <td>{{ customer.email }}</td>
                     <td>
                       
-                        <router-link :to="'/customers/${customer.id}'" class="p-2 btn text-primary"><font-awesome-icon icon="fa-solid fa-eye" /></router-link>
-                        <router-link :to="'/customers/${customer.id}/edit'" class="p-2 btn text-success"><font-awesome-icon icon="fa-solid fa-user-pen" /></router-link>
+                        <router-link :to="`/customers/${customer.id}`" class="p-2 btn text-primary"><font-awesome-icon icon="fa-solid fa-eye" /></router-link>
+                        <router-link :to="`/customers/${customer.id}/edit`" class="p-2 btn text-success"><font-awesome-icon icon="fa-solid fa-user-pen" /></router-link>
                         <button @click="deleteCustomer(customer.id)" type="button" class="p-2 btn text-danger"><font-awesome-icon icon="fa-solid fa-trash-can" /></button>
                       
                     </td>
