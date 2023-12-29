@@ -25,7 +25,7 @@ data() {
 },
 async created() {
     try {
-    const response = await axios.get(`/api/customers/${this.$route.params.id}`);
+    const response = await axios.get('/api/customers/${this.$route.params.id}');
     this.customer = response.data;
     } catch (error) {
     console.error(error);
