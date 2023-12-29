@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## FE test
+
+Form di inserimento dati cliente sviluppato con Laravel e Vue
+
+Una volta scaricato il progetto sul proprio pc è necessario configurare il file .env con i dati del db
+
+DB_DATABASE=xxxxx
+
+DB_USERNAME=xxxx
+
+DB_PASSWORD=xxxx
+
+lanciare il comando php artisan migrate
+
+successivamente
+
+- npm install
+- npm run dev
+- php artisan serve
+- npm run watch
+
+  
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -64,3 +86,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
