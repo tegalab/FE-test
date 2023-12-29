@@ -61,7 +61,7 @@
     },
     async created() {
       if (!this.isNewCustomer) {
-        const response = await axios.get('/api/customers/${this.$route.params.id}');
+        const response = await axios.get(`/api/customers/${this.$route.params.id}`);
         this.customer = response.data;
       }
     },
@@ -71,7 +71,7 @@
           if (this.isNewCustomer) {
             await axios.post('/api/customers', this.customer);
           } else {
-            await axios.put('/api/customers/${this.$route.params.id}', this.customer);
+            await axios.put(`/api/customers/${this.$route.params.id}`, this.customer);
           }
           this.$router.push('/');
         } catch (error) {

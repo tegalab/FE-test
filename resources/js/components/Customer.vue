@@ -7,9 +7,9 @@
         <h5 id="associating-form-text-with-form-controls">Cognome</h5>
         <p>{{ customer.surname }}</p>
         <h5 id="associating-form-text-with-form-controls">Telefono</h5>
-        <p>Price: {{ customer.telephone }}</p>
+        <p>{{ customer.telephone }}</p>
         <h5 id="associating-form-text-with-form-controls">Email</h5>
-        <p>Price: {{ customer.email }}</p>
+        <p>{{ customer.email }}</p>
         <router-link :to="`/customers/${customer.id}/edit`" class="btn btn-primary">Edit</router-link>
     </div>
 </template>
@@ -25,7 +25,7 @@ data() {
 },
 async created() {
     try {
-    const response = await axios.get('/api/customers/${this.$route.params.id}');
+    const response = await axios.get(`/api/customers/${this.$route.params.id}`);
     this.customer = response.data;
     } catch (error) {
     console.error(error);
